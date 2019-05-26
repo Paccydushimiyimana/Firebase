@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ede06a"
+    tools:context=".Userz">
+
+    <TextView
+
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Welcome!!: "
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tvmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv"
+        android:layout_marginTop="28dp"
+        android:textSize="20sp"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:id="@+id/etname"
+        android:layout_below="@id/tvmail"/>
+
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Adrees"
+        android:id="@+id/etadress"
+        android:layout_below="@id/etname"/>
+
+    <Button
+        android:id="@+id/bsave"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etadress"
+        android:layout_alignEnd="@+id/tv"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="-7dp"
+        android:text="Save" />
+
+
+    <TextView
+        android:id="@+id/blogt"
+        android:layout_width="355dp"
+        android:layout_height="58dp"
+        android:layout_alignEnd="@+id/tv"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="374dp"
+        android:layout_marginEnd="9dp"
+        android:text="Click here to logout"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp" />
+
+
+
+</RelativeLayout>

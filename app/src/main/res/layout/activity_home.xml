@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#ede06a"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log in"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:id="@+id/id"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/image"
+        android:id="@+id/img"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/id"
+        />
+
+    <EditText
+        android:id="@+id/etmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Email"
+        android:layout_below="@id/img"/>
+
+    <EditText
+        android:id="@+id/etpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etmail"
+        android:layout_alignTop="@+id/etmail"
+        android:layout_marginTop="66dp"
+        android:hint="Password"
+        android:inputType="textPassword"/>
+
+
+    <Button
+        android:id="@+id/blog"
+        android:layout_width="248dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etpass"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="71dp"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="62dp"
+        android:text="LOGIN"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tvreg"
+        android:layout_width="355dp"
+        android:layout_height="58dp"
+        android:layout_alignTop="@+id/blog"
+        android:layout_marginTop="91dp"
+        android:text="Click here to register"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimaryDark" />
+
+</RelativeLayout>
